@@ -1,0 +1,455 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #060c21;
+}
+.parallax{
+    background-image: url(45.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;   
+    
+    
+} 
+
+.menu{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0,0, 0, 0.5);
+     
+}
+.leftmenu{
+    width: 20%;
+    line-height: 65px;
+    float: left;
+    }
+.leftmenu img{
+    float: left;
+    height: 60px;
+    width:  60px;
+}
+.leftmenu h4{
+    padding-left: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: sans-serif;
+    color: white;
+}
+.rightmenu{
+    
+    width: 50%;
+    height: 70px;
+    float:right;
+}
+.rightmenu ul{
+    /* float: right; */
+    position: relative;
+    top: 20px;
+    line-height: 30px;
+    /* margin-top: 5px;     */
+    margin-left: 25%;
+    /* line-height: */
+   }
+.rightmenu ul li{
+    
+    /* line-height:30px; */
+    font-family: sans-serif;
+    display: inline-block;
+    list-style: none;
+    /* margin-right: 20px; */
+    padding: 5px 20px;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-sizing: border-box;
+    border-radius: 2px;
+    
+}
+.rightmenu ul li:hover{
+    background: #2196f3;
+    opacity: 0.9;
+}
+.rightmenu ul li ul{
+    position:absolute;
+    top: 40px;
+    left: 89px;
+    margin: 0;
+    background: rgba(0,0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;   
+    }
+
+ .rightmenu ul li:hover ul{ 
+    opacity: 1;
+    visibility: visible;
+} 
+.rightmenu ul li ul li{
+    margin: 0;
+    display: block;
+}
+.rightmenu ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.rightmenu ul #home{
+    background: #2196f3;
+}
+.text{
+    width :100%;
+    height: 150vh;
+    /* float: left; */
+    margin-top: 30px;
+    text-transform:uppercase;
+    text-align: center;
+}
+.text h1{
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700px;
+    margin: 14px;
+}
+.text h3{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.text h5{
+    font-size: 20px;
+    font-family: cursive;
+    }
+.text .robotics{
+    width: 50%;
+    float : left;
+    margin:20px;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 10px;
+}
+ .text .robotics p span{
+     font-family: Arial, Helvetica, sans-serif;
+     display: block;
+     font-size: 40px;
+     font-weight: bold;
+     padding:  15px;
+
+}
+.text .robotics p{
+    /* width: 50%; */
+    
+    padding: 20px;         
+    text-align: center;
+    color: white;
+    line-height: 25px;
+}
+.text .registration{
+    float: right;
+    width  :40%;
+    /* height: 50vh; */
+    background: rgba(0,0,0,0.8);
+    color:  #D9D3D1;
+    margin: 20px 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    
+}
+.text .registration form p{
+    margin: 20px 0px;   
+}
+.registration form .name input{
+    padding: 5px 0;
+    margin-bottom: 25px;   
+    margin-top:
+}
+
+.registration form .radio label,
+.registration form .checkbox label{
+    margin: 10px 5px    
+       
+}
+.registration form .radio input,
+.registration form .checkbox input{
+    margin: 3px;
+}
+.registration form .name input{
+    background: transparent;
+    /* opacity: 0.8; */
+    color: white;
+    width: 100%;    
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #9999;
+}
+
+.registration form  input[type= "submit"]
+{
+    background: #2196f3;
+    width: 30%;
+    /* align-content: center; */
+    color: white;
+    border-radius: 5px;
+    border-bottom: none;
+}
+.registration form .name{
+    position: relative
+}
+.registration form label{
+    font-size: 15px;
+    font-family: sans-serif;
+}
+.registration form .name label{
+    position : absolute;
+    top: 5px;
+    left: 0;
+    transition: 0.5s;
+    color:  #D9D3D1;
+    
+    pointer-events: none;
+
+}
+.registration form .name input:focus ~ label,
+.registration form .name input:valid ~ label{
+    top : -12px;
+    left: 0;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+/* .text .registration form p span{
+    display: block;
+    font-size: 30px;
+} */
+
+.text .glow{
+    background: rgba(0,0,0,0.8);
+    width: 40%;
+    float:right;
+    /* height: 25vh; */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px; 
+
+}
+ .text .glow ul{
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%,-50%); */
+    /* float: right; */
+    /* margin: 15px; */
+    /* padding:0; */
+    align-items: center; 
+    /* display: inline; */
+
+
+    /* display: flex; */
+}
+.text .glow ul li{
+    display: inline-block;
+    align-items: center;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    letter-spacing: 15px;
+    color: #484848;
+    text-shadow: none;
+    animation: animate 1s infinite linear;
+}
+.text .glow #small li{
+    font-size:20px;
+}
+@keyframes animate{
+    0%{
+        color: #484848;
+        text-shadow: none;
+    }
+    18%{
+        color: #484848;
+        text-shadow: none;
+    }
+    20%{
+        color: #fff900;
+        text-shadow: 0 0 7px #fff900 , 0 0 20px #ff6c00;
+    }
+    /* 30%{
+        color: #484848;
+        text-shadow: none;
+    } */
+    35%{
+        color: #fff900;
+        text-shadow: 0 0 7px #fff900 , 0 0 20px #ff6c00;
+    }
+    70%{
+        color: #484848;
+        text-shadow: none;
+    }
+    85%{
+        color: #fff900;
+        text-shadow: 0 0 7px #fff900 , 0 0 20px #ff6c00;
+    }
+    90%{
+        color: #484848;
+        text-shadow: none;
+    }
+    100%{
+        color: #484848;
+        text-shadow: none;
+    }
+}
+ul li:nth-child(1){
+    animation-delay: .2s;
+}
+ul li:nth-child(2){
+    animation-delay: .4s;
+}
+ul li:nth-child(3){
+    animation-delay: .6s;
+}
+ul li:nth-child(4){
+    animation-delay: .8s;
+}
+ul li:nth-child(5){
+    animation-delay: 1s;
+}
+ul li:nth-child(6){
+    animation-delay: 1.2s;
+}
+ul li:nth-child(7){
+    animation-delay: 1.4s;
+}
+ul li:nth-child(8){
+    animation-delay: 1.6s;
+}
+
+.grid #head{
+    display: flex;
+    background: #e64a19;
+    justify-content: center;
+
+}
+.grid{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: #060c21; */
+    font-family: sans-serif;
+}
+
+.container{
+    
+    position: relative;
+    /* top: 100px; */
+    width: 75%;
+    /* margin: auto; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-gap: 0 50px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* background: #060c21;s */
+
+}
+ .container .box{
+    position: relative;
+    height: 400px;
+    background: #060c21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+ .container .box::before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    transform: skew(2deg,2deg);
+    z-index: -1;
+
+}
+ .container .box:nth-child(1)::before{
+    background: linear-gradient(315deg,#ff0057,#e64a19);
+
+}
+ .container .box:nth-child(2)::before{
+    background: linear-gradient(315deg,#89ff00,#00bcd4);
+
+}
+ .container .box:nth-child(3)::before{
+    background: linear-gradient(315deg,#e91e63,#5d02ff);
+
+}
+.content{
+    position: relative;
+    padding: 20px;
+    transform: translateY(45px);
+}
+.box .content h2{
+    position: absolute;
+    top: -60px;
+    right: 20px;
+    margin: 0px;
+    padding: 0;
+    font-size: 10em;
+    color: rgba(255,255,255,.05);
+    transition: 0.3s;
+}
+.box:hover .content h2{
+    top:-140px;
+}
+.box .content h3{
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+    color:#fff;
+    text-transform: uppercase;
+
+
+}
+.box .content p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 16x;
+
+}
+.box .content a{
+    position: relative;
+    margin: 20px 0  0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    display: inline-block;
+    color: #fff;
+    transition: 0.3s;
+    text-transform: uppercase;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+}
+.box:hover .content a{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+
+}
+.box .content a:hover{
+    color: #000;
+    background: #fff;
+}
